@@ -8,13 +8,14 @@ The main idea for this project is to fulfill the actual requirements for a small
 
 <h3>Software elements and environment:</h3>
 
--Ubuntu Server ( Minimum 12GB Ram and 4 Virtual Cores)
+-Ubuntu Server ( Minimum 12GB Ram and 4 Cores)
 -Nginx
 -Nginx RTMP
 -MySQL (PostgreSQL can be added but this project is only for MySQL)
 -FFMPEG
 -PHP
 -Javascript
+-IP addressing plan
 
 <h3>STEP 1: Initial server configuration</h3>
 
@@ -27,6 +28,15 @@ Software instalation
 <h3> STEP : Database </h3> 
 
 <h3> STEP : Video transcoding and processing </h3>
+
+<h3> STEP : Domain and intertet access </h3>
+
+DNS
+VPN
+IPV4
+IPv6
+Network routing
+Network isolation
 
 <h3> STEP : API - Dynamic Video Library </h3>
 
