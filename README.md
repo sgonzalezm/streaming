@@ -1,5 +1,5 @@
 # streaming
-<h1>Streamign ecosystem for Video OTT delivery using HLS </h1>
+<h1>Streaming ecosystem for Video OTT delivery using HLS </h1>
 
 Features: 
 This ecosystem allow you to deliver video content over the internet or local network with a highly scalable architecture. As part of the main features is also to index and process the video to be prepared for internet and ABR transport protocols like HLS (Stage 1) and DASH (Stage 2)
@@ -53,6 +53,9 @@ Keeping on mind it , the main page will be hosted in the cloud, this main page w
 
 On a regular basis the server is going to register the IPv6 global it has assigned, this action will be performed through API to the web service in the cloud and it will log into the database.
 If there is more than one server, each server will register its own IPv6 address.
+
+Of curse there are many other approaches for this kind of services , but most of them requires a CDN which is currently beyond economical, the main idea again is to keep the cost as minimum.
+Once the system is big enough to consider a CDN, it could be possible to have a dedicated link and increase the server capacity, recall this is not cloud based service but old school highly specialized service.
 
 <h3> STEP : API - Dynamic Video Library </h3>
 
