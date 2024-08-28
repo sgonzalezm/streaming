@@ -46,6 +46,14 @@ IPv6
 Network routing
 Network isolation
 
+The first stage about the domain and OTT video delivery consider a basic server on premise which currently is running IPV6 link global to provide the service,
+it is not the most interactive and dynamic way to deploy the system. 
+
+Keeping on mind it , the main page will be hosted in the cloud, this main page will manage all the links to the multiple content are available in the on-prem server which is going to keep the IP address.
+
+On a regular basis the server is going to register the IPv6 global it has assigned, this action will be performed through API to the web service in the cloud and it will log into the database.
+If there is more than one server, each server will register its own IPv6 address.
+
 <h3> STEP : API - Dynamic Video Library </h3>
 
 <h3> STEP : Content protection </h3>
