@@ -1,0 +1,342 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    margin-left: 260px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.sidebar h3 {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+
+header {
+    background-color: #494949;
+    color: white;
+    padding: 5px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 8;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+}
+
+nav ul li {
+    margin: 0px;
+    padding: 5px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #757474;
+}
+
+main {
+    padding: 0px;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input[type="text"],
+form input[type="file"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-left: 0; /* En pantallas pequeñas, elimina el margen izquierdo */
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-image img {
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.card-content p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.card-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.card-link:hover {
+    color: #0056b3;
+}
+
+/* Sidebar CSS */
+.sidebar {
+    width: 250px;
+    position: fixed;
+    height: 100%;
+    background-color: #333;
+    padding-top: 20px;
+    overflow-y: auto;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    transition: transform 0.3s ease; /* Transición para mostrar/ocultar */
+}
+
+/* Sidebar CSS */
+.sidebar {
+    width: 250px;
+    position: fixed;
+    height: 100%;
+    background-color: #333;
+    padding-top: 20px;
+    overflow-y: auto;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    text-align: left;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background-color: #575757;
+    color: white;
+}
+
+.sidebar ul ul {
+    padding-left: 20px;
+    background-color: #444;
+}
+
+.sidebar ul ul li {
+    padding: 8px;
+}
+
+.sidebar ul ul li a {
+    color: #ddd;
+}
+
+/* Estilo para el contenido principal para evitar que se sobreponga al sidebar */
+
+
+/* Estilo del banner de métricas */
+.metrics-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    background-color: #282c34;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom: 2px solid #444;
+    margin-top: 20px; /* Agrega margen superior para separar del contenido anterior */
+    margin-right: 10px;
+}
+
+.metric {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    margin: 0 10px; /* Espaciado horizontal entre elementos */
+    border-radius: 8px;
+    background-color: #3b3f47;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+    max-width: 180px; /* Limitar el ancho máximo de cada tarjeta */
+}
+
+.metric:hover {
+    transform: scale(1.05);
+}
+
+.metric h3 {
+    margin: 0 0 5px 0;
+    font-size: 1em;
+    color: #ffffff;
+}
+
+.metric p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #b0b3b8;
+}
+
+/* Media Queries para responsividad en dispositivos móviles */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column; /* Alinea las tarjetas en columna */
+        gap: 10px; /* Reduce el espacio entre tarjetas */
+        align-items: center; /* Centra las tarjetas en el contenedor */
+        margin-left: 270px; /* Añade margen a la izquierda igual al ancho del sidebar */
+    }
+
+    .card {
+        max-width: 90%; /* Aumenta el ancho de la tarjeta para pantallas pequeñas */
+        margin-bottom: 20px; /* Agrega margen inferior para separación */
+    }
+
+    .card-content h3 {
+        font-size: 1.2em; /* Reduce el tamaño de la fuente del título */
+    }
+
+    .card-content p {
+        font-size: 0.9em; /* Reduce el tamaño de la fuente de la descripción */
+    }
+
+    .metrics-banner {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .metric {
+        max-width: 100%;
+        width: 100%;
+        margin: 5px 0;
+    }
+    .sidebar {
+        transform: translateX(-100%); /* Mueve el sidebar fuera de la vista a la izquierda */
+    }
+
+    .menu-toggle {
+        display: block; /* Mostrar el botón de menú en pantallas pequeñas */
+    }
+
+    .main-content, .metrics-banner, .card-container {
+        margin-left: 0; /* Ajusta el margen para ocupar todo el ancho disponible */
+        width: 100%; /* Asegura que el contenido ocupe todo el ancho disponible */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        max-width: 100%; /* Ajusta el ancho de la tarjeta al ancho de la pantalla */
+        margin: 0 10px 20px; /* Agrega margen lateral y margen inferior */
+    }
+
+    .card-content h3 {
+        font-size: 1em; /* Ajusta el tamaño de la fuente del título aún más pequeño */
+    }
+
+    .card-content p {
+        font-size: 0.8em; /* Ajusta el tamaño de la fuente de la descripción aún más pequeño */
+    }
+}
+/* Botón de menú para pantallas pequeñas */
+.menu-toggle {
+    display: none; /* Ocultar por defecto en pantallas grandes */
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    z-index: 1001; /* Asegura que el botón esté sobre el contenido */
+    cursor: pointer;
+}
+
+.menu-toggle:focus {
+    outline: none; /* Elimina el contorno del botón al hacer clic */
+}
+
+/* Mostrar sidebar cuando se active */
+.sidebar.active {
+    transform: translateX(0); /* Mueve el sidebar de nuevo a la vista */
+}
