@@ -29,6 +29,12 @@ Software instalation
 
 <h3> STEP : Video transcoding and processing </h3>
 
+ffmpeg -i /tmp/hls/saitama.mp4 -c:v libx264 -c:a aac -strict experimental -b:v 1000k -b:a 128k -hls_time 3 -hls_list_size 0 -f hls /tmp/hls/streaming.m3u8
+![image](https://github.com/user-attachments/assets/3d0b41a0-61a7-413e-a7d3-9931d009cdbe)
+
+
+
+
 <h3> STEP : Multiscreen ABR </h3>
 
 <h3> STEP : Domain and intertet access </h3>
