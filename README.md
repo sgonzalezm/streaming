@@ -23,7 +23,27 @@ IP/Networking config and requirements
 
 Software instalation
 
-<h3> STEP 2: Admin and Operations web portal </h3>
+<h3> STEP : Admin and Operations web portal </h3>
+
+<h3> STEP : Monitoring </h3> 
+
+To ensure optimal performance and reliability, the server requires continuous monitoring of key parameters such as RAM usage, CPU load, storage utilization, network traffic, and active worker processes.
+A web server built with Flask will expose these metrics via a RESTful API, providing a structured and easily accessible endpoint for data retrieval.
+An administrative console or management portal will consume the API data, uploading the metrics to a centralized database for long-term storage and analysis. This portal will also feature a web-based interface for real-time visualization and monitoring of the server's health and performance.
+
+Conectivity parameters required for API monitoring data consumption: 
+Server IP:
+TCP Port:
+Data to be shown: 
+
+To keep the monitor active:
+sudo apt update
+sudo apt install tmux
+tmux new -s monitor
+python3 /home/sgonzalezm/monitor.py
+
+
+Example: 
 
 <h3> STEP : Database </h3> 
 
