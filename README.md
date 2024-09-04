@@ -9,6 +9,7 @@ The main idea for this project is to fulfill the actual requirements for a small
 <h3>Software elements and environment:</h3>
 
 -Ubuntu Server ( Minimum 12GB Ram and 4 Cores)
+-Raspberry OS
 -Nginx
 -Nginx RTMP
 -MySQL (PostgreSQL can be added but this project is only for MySQL)
@@ -84,6 +85,17 @@ Once the system is big enough to consider a CDN, it could be possible to have a 
 <h3> STEP : Content protection </h3>
 
 <h3> STEP : Main page for video consumption </h3>
+
+<h3> STEP : Mobile Android App </h3>
+
+Native Player using HLS + Fairplay
+
+<h3> STEP : Mobile iOS App </h3>
+
+Native Player using MPEG-DASH + Widevine
+
+
+
 
 
 
